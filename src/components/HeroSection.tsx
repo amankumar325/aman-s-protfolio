@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { cn } from '@/lib/utils';
 import { HardHat, Map, Ruler } from 'lucide-react';
@@ -82,9 +81,9 @@ const HeroSection: React.FC = () => {
           
           <div className="flex-1 relative">
             <div className="relative z-10 rounded-xl overflow-hidden shadow-2xl bg-white">
-              <div className="relative overflow-hidden rounded-xl h-[400px]">
+              <div className="relative overflow-hidden rounded-xl" style={{ aspectRatio: '1 / 1' }}> {/* Adjusted to use aspect ratio */}
                 <img
-                  src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952"
+                  src="https://avatars.githubusercontent.com/u/210061871?s=400&u=984f020c96d4ff25768223c96753316ccdd20116&v=4"
                   alt="Aman Kumar - Civil Engineering Student"
                   className="w-full h-full object-cover transform transition-transform hover:scale-105 duration-500"
                 />
