@@ -2,6 +2,7 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
 import { HardHat, Map, Ruler } from 'lucide-react';
+import Scene3D from './Scene3D';
 
 const HeroSection: React.FC = () => {
   return (
@@ -30,6 +31,7 @@ const HeroSection: React.FC = () => {
             <div>
               <h2 className="text-skyblue font-semibold">Civil Engineer Portfolio</h2>
               <h1 className="heading-xl mt-2">
+                <span className="text-brown block mb-2">Aman Kumar</span>
                 Building The 
                 <span className="text-skyblue relative ml-3 inline-block">
                   Future
@@ -80,7 +82,9 @@ const HeroSection: React.FC = () => {
           </div>
           
           <div className="flex-1 relative">
-            <div className="relative z-10 rounded-xl overflow-hidden shadow-2xl">
+            {/* Replace the image with our 3D scene */}
+            <div className="relative z-10 rounded-xl overflow-hidden shadow-2xl bg-white">
+              <Scene3D />
               <img
                 src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                 alt="Modern city skyline"
