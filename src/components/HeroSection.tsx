@@ -2,7 +2,7 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
 import { HardHat, Map, Ruler } from 'lucide-react';
-import Scene3D from './Scene3D';
+import { useNavigate } from 'react-router-dom';
 
 const HeroSection: React.FC = () => {
   return (
@@ -29,7 +29,7 @@ const HeroSection: React.FC = () => {
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="flex-1 space-y-6">
             <div>
-              <h2 className="text-skyblue font-semibold">Civil Engineer Portfolio</h2>
+              <h2 className="text-skyblue font-semibold">Civil Engineer Student</h2>
               <h1 className="heading-xl mt-2">
                 <span className="text-brown block mb-2">Aman Kumar</span>
                 Building The 
@@ -47,16 +47,16 @@ const HeroSection: React.FC = () => {
                 </span>
               </h1>
               <p className="mt-4 text-lg md:text-xl text-gray-600 max-w-xl">
-                Innovative civil engineering solutions with a focus on sustainability,
-                efficiency, and cutting-edge design.
+                Innovative civil engineering student passionate about sustainable design, 
+                modern construction techniques, and creating infrastructure for the future.
               </p>
             </div>
             
             <div className="flex flex-wrap gap-4 pt-4">
-              <a href="#projects" className="btn-primary">
+              <a href="#projects" className="btn-primary smooth-scroll">
                 View Projects
               </a>
-              <a href="#contact" className="border-2 border-skyblue text-skyblue px-6 py-[10px] rounded-md font-medium transition-all duration-300 hover:bg-skyblue/10">
+              <a href="#contact" className="border-2 border-skyblue text-skyblue px-6 py-[10px] rounded-md font-medium transition-all duration-300 hover:bg-skyblue/10 smooth-scroll">
                 Contact Me
               </a>
             </div>
@@ -82,14 +82,19 @@ const HeroSection: React.FC = () => {
           </div>
           
           <div className="flex-1 relative">
-            {/* Replace the image with our 3D scene */}
             <div className="relative z-10 rounded-xl overflow-hidden shadow-2xl bg-white">
-              <Scene3D />
-              <img
-                src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                alt="Modern city skyline"
-                className="w-full h-auto object-cover"
-              />
+              <div className="relative overflow-hidden rounded-xl">
+                <img
+                  src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952"
+                  alt="Aman Kumar - Civil Engineering Student"
+                  className="w-full h-auto object-cover transform transition-transform hover:scale-105 duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-60"></div>
+                <div className="absolute bottom-4 left-4 text-white">
+                  <p className="font-bold text-xl">Aman Kumar</p>
+                  <p className="text-sm">Civil Engineering Student</p>
+                </div>
+              </div>
             </div>
             {/* Decorative elements */}
             <div className="absolute -top-5 -right-5 w-24 h-24 rounded-lg border-4 border-brown/30 -z-10"></div>

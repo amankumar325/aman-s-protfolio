@@ -43,12 +43,12 @@
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-}
 
-@layer base {
-  * {
-    @apply border-border;
+    --scroll-behavior: smooth;
+  }
+
+  html {
+    scroll-behavior: smooth;
   }
 
   body {
@@ -72,6 +72,29 @@
   
   .animation-delay-400 {
     animation-delay: 400ms;
+  }
+
+  /* Improved transitions */
+  .page-transition-enter {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  
+  .page-transition-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 400ms, transform 400ms;
+  }
+  
+  .page-transition-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .page-transition-exit-active {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 300ms, transform 300ms;
   }
 }
 
@@ -106,5 +129,10 @@
   
   .heading-md {
     @apply text-xl md:text-2xl font-semibold;
+  }
+
+  /* Enhanced smooth scroll link */
+  .smooth-scroll {
+    @apply transition-all duration-300;
   }
 }
