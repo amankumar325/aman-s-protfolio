@@ -15,18 +15,22 @@ const AboutSection: React.FC = () => {
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <h3 className="heading-md">Hey there, I'm <span className="text-brown">Alex Morgan</span></h3>
+            <h3 className="heading-md">Hey there, I'm <span className="text-brown">Aman Kumar</span></h3>
             <p className="text-gray-600">
-              I'm a final-year civil engineering student at MIT with a passion for 
-              sustainable urban development and innovative structural design. My journey 
+              I'm a dedicated civil engineering student at Excel Engineering College in India, with a 
+              passion for sustainable urban development and innovative structural design. My journey 
               in civil engineering began with a fascination for how structures shape our 
               daily lives and communities.
             </p>
             <p className="text-gray-600">
-              Through internships at leading firms like Foster + Partners and AECOM,
-              I've gained hands-on experience in structural analysis, BIM modeling, and 
-              sustainable design practices. I believe the future of civil engineering lies 
+              Through various project works and internships, I've gained hands-on experience in structural analysis, 
+              CAD modeling, and sustainable design practices. I believe the future of civil engineering lies 
               in the integration of smart technologies with traditional construction methods.
+            </p>
+            <p className="text-gray-600">
+              Beyond academics, I actively participate in engineering competitions and workshops 
+              to enhance my skills and network with industry professionals. I'm particularly interested in 
+              earthquake-resistant structures and green building technologies.
             </p>
             
             <div className="pt-4 grid grid-cols-2 gap-4">
@@ -36,21 +40,21 @@ const AboutSection: React.FC = () => {
                   Education
                 </h4>
                 <p className="text-sm mt-1">
-                  MIT, Civil Engineering<br />
-                  Class of 2024<br />
-                  GPA: 3.92/4.0
+                  Excel Engineering College<br />
+                  Civil Engineering<br />
+                  Batch of 2024
                 </p>
               </div>
               
               <div className="bg-gray-50 p-4 rounded-lg">
                 <h4 className="font-semibold text-skyblue flex items-center gap-2">
                   <Construction className="w-5 h-5" />
-                  Experience
+                  Skills
                 </h4>
                 <p className="text-sm mt-1">
-                  AECOM - Intern<br />
-                  Foster + Partners<br />
-                  Research Assistant
+                  AutoCAD, Revit<br />
+                  Structural Analysis<br />
+                  Project Management
                 </p>
               </div>
             </div>

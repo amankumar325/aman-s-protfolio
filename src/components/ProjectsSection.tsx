@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import { Building, Construction, Layers } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 // Project category types
 type ProjectCategory = 'all' | 'structural' | 'transportation' | 'environmental';
@@ -134,15 +135,15 @@ const ProjectsSection: React.FC = () => {
                   <span className="text-xs font-medium px-3 py-1 bg-gray-100 rounded-full text-gray-600">
                     {project.category}
                   </span>
-                  <a 
-                    href="#" 
+                  <Link 
+                    to={`/project/${project.id}`}
                     className="text-skyblue font-medium flex items-center gap-1 text-sm hover:underline"
                   >
                     View Details
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
                       <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -150,12 +151,12 @@ const ProjectsSection: React.FC = () => {
         </div>
         
         <div className="text-center mt-12">
-          <a href="#" className="btn-primary inline-flex items-center gap-2">
+          <Link to="/projects" className="btn-primary inline-flex items-center gap-2">
             See All Projects
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
               <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
             </svg>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

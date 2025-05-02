@@ -63,8 +63,8 @@ const Navbar: React.FC = () => {
         <a href="#" className="flex items-center gap-2 group">
           <Construction className="h-8 w-8 text-skyblue transition-transform group-hover:rotate-12 duration-300" />
           <span className="font-bold text-lg md:text-xl">
-            <span className="text-skyblue">Civil</span>
-            <span className="text-brown">Future</span>
+            <span className="text-skyblue">Aman's</span>
+            <span className="text-brown">Profile</span>
           </span>
         </a>
         

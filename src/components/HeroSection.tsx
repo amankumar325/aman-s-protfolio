@@ -2,11 +2,10 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
 import { HardHat, Map, Ruler } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
 
 const HeroSection: React.FC = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center pt-16 overflow-hidden">
+    <section id="home" className="relative min-h-[90vh] flex items-center pt-16 overflow-hidden">
       {/* Background grid */}
       <div className="absolute inset-0 bg-grid opacity-30"></div>
       
@@ -47,8 +46,8 @@ const HeroSection: React.FC = () => {
                 </span>
               </h1>
               <p className="mt-4 text-lg md:text-xl text-gray-600 max-w-xl">
-                Innovative civil engineering student passionate about sustainable design, 
-                modern construction techniques, and creating infrastructure for the future.
+                Dedicated civil engineering student from Excel Engineering College India. Passionate about sustainable infrastructure, 
+                innovative design solutions, and creating structures that leave a lasting impact on communities.
               </p>
             </div>
             
@@ -83,11 +82,11 @@ const HeroSection: React.FC = () => {
           
           <div className="flex-1 relative">
             <div className="relative z-10 rounded-xl overflow-hidden shadow-2xl bg-white">
-              <div className="relative overflow-hidden rounded-xl">
+              <div className="relative overflow-hidden rounded-xl h-[400px]">
                 <img
                   src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952"
                   alt="Aman Kumar - Civil Engineering Student"
-                  className="w-full h-auto object-cover transform transition-transform hover:scale-105 duration-500"
+                  className="w-full h-full object-cover transform transition-transform hover:scale-105 duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-60"></div>
                 <div className="absolute bottom-4 left-4 text-white">
