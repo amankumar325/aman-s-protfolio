@@ -4,7 +4,7 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls, PerspectiveCamera } from '@react-three/drei';
 import * as THREE from 'three';
 
-const Building = ({ position, scale, color = '#33C3F0' }) => {
+const Building = ({ position, scale, color = '#33C3F0' }: { position: [number, number, number], scale: [number, number, number], color?: string }) => {
   const mesh = useRef<THREE.Mesh>(null);
   
   useFrame(() => {
@@ -26,6 +26,11 @@ const Bridge = ({
   rotation = [0, 0, 0] as [number, number, number], 
   scale = [5, 0.2, 1] as [number, number, number], 
   color = '#8B5A2B' 
+}: {
+  position: [number, number, number],
+  rotation?: [number, number, number],
+  scale?: [number, number, number],
+  color?: string
 }) => {
   return (
     <mesh position={position} rotation={rotation} scale={scale}>
