@@ -5,7 +5,7 @@ import { OrbitControls, PerspectiveCamera } from '@react-three/drei';
 import * as THREE from 'three';
 
 const Building = ({ position, scale, color = '#33C3F0' }) => {
-  const mesh = useRef();
+  const mesh = useRef<THREE.Mesh>(null);
   
   useFrame(() => {
     if (mesh.current) {
@@ -21,7 +21,12 @@ const Building = ({ position, scale, color = '#33C3F0' }) => {
   );
 };
 
-const Bridge = ({ position, rotation = [0, 0, 0], scale = [5, 0.2, 1], color = '#8B5A2B' }) => {
+const Bridge = ({ 
+  position, 
+  rotation = [0, 0, 0] as [number, number, number], 
+  scale = [5, 0.2, 1] as [number, number, number], 
+  color = '#8B5A2B' 
+}) => {
   return (
     <mesh position={position} rotation={rotation} scale={scale}>
       <boxGeometry args={[1, 1, 1]} />
