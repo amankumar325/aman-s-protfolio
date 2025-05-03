@@ -42,7 +42,7 @@ const AboutSection: React.FC = () => {
                 <p className="text-sm mt-1">
                   Excel Engineering College<br />
                   Civil Engineering<br />
-                  Batch of 2024
+                  Batch of 2022
                 </p>
               </div>
               
