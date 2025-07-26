@@ -20,51 +20,19 @@ interface Project {
 const projects: Project[] = [
   {
     id: 'p1',
-    title: 'Sky Bridge Design',
-    description: 'Innovative pedestrian bridge connecting two downtown buildings with sustainable materials.',
+    title: 'G+7 Residential Building',
+    description: 'Design and construction of a modern residential building with sustainable features.',
     category: 'structural',
     image: 'https://images.unsplash.com/photo-1518005068251-37900150dfca?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
     icon: <Building className="h-5 w-5" />
   },
   {
     id: 'p2',
-    title: 'Metro Line Extension',
-    description: 'Urban transit solution with minimal environmental impact and maximum efficiency.',
-    category: 'transportation',
+    title: 'Electricity Generation from Solid Waste',
+    description: 'Engineering project for generating electricity from solid waste using advanced technologies.',
+    category: 'environmental',
     image: 'https://images.unsplash.com/photo-1565429520965-13f526df0206?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
     icon: <Layers className="h-5 w-5" />
-  },
-  {
-    id: 'p3',
-    title: 'Green Stormwater System',
-    description: 'Sustainable water management system for urban neighborhoods reducing flooding risks.',
-    category: 'environmental',
-    image: 'https://images.unsplash.com/photo-1625246333195-78d73a99e89a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    icon: <Construction className="h-5 w-5" />
-  },
-  {
-    id: 'p4',
-    title: 'Earthquake Resistant Tower',
-    description: 'High-rise building design with advanced seismic protection systems.',
-    category: 'structural',
-    image: 'https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    icon: <Building className="h-5 w-5" />
-  },
-  {
-    id: 'p5',
-    title: 'Solar Highway System',
-    description: 'Highway design incorporating solar panels and efficient traffic management.',
-    category: 'transportation',
-    image: 'https://images.unsplash.com/photo-1545558014-8692077e9b5c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    icon: <Layers className="h-5 w-5" />
-  },
-  {
-    id: 'p6',
-    title: 'River Restoration',
-    description: 'Urban river rehabilitation project improving water quality and ecosystem health.',
-    category: 'environmental',
-    image: 'https://images.unsplash.com/photo-1629461461750-ef5b9913522b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    icon: <Construction className="h-5 w-5" />
   },
 ];
 

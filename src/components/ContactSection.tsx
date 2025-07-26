@@ -156,7 +156,9 @@ const ContactSection: React.FC = () => {
                   Looking for internships and collaboration opportunities in innovative civil engineering projects.
                 </p>
                 <a 
-                  href="#" 
+                  href="https://drive.google.com/file/d/14oV9GZbFLU3WLpTjGh0HVlrGFYecewBo/view?usp=drivesdk" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-white text-skyblue px-4 py-2 rounded-md font-medium hover:bg-opacity-90 transition-all"
                 >
                   Download Resume
